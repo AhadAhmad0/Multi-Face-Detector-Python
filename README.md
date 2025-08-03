@@ -33,3 +33,5 @@ This is a pre-trained XML file included in OpenCV. It contains data for detectin
 
 haarcascade_frontalface_default.xml
 This is a pre-trained XML file included in OpenCV. It contains data for detecting frontal human faces using the Haar feature-based cascade classifier. This model is trained on thousands of positive (face) and negative (non-face) images. The classifier can efficiently scan an image and locate face-like patterns.
+
+I have also provided the image file and .xml file.
