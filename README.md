@@ -2,6 +2,11 @@
 
 A Python script that detects multiple faces in a static image using OpenCV's Haar Cascade classifier and draws bounding boxes around each detected face.
 
+## Sample Output
+
+<img width="1647" height="537" alt="Screenshot 2026-06-19 220407" src="https://github.com/user-attachments/assets/8ec9bdb7-86b7-4c5c-9184-f54dd3d0832d" />
+
+
 ## Features
 
 - Detects multiple faces simultaneously in a single image
