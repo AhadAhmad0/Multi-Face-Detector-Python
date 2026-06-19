@@ -1,37 +1,38 @@
-# Multi-Face-Detector-Python
+# Multi Face Detector
 
-Multi-Face Detector is a simple Python application that uses OpenCV to detect and highlight multiple human faces in a given image. The program identifies faces using the Haar Cascade Classifier and draws rectangular boxes around each detected face. This is an ideal beginner project for those learning image processing or computer vision.
+A Python script that detects multiple faces in a static image using OpenCV's Haar Cascade classifier and draws bounding boxes around each detected face.
 
-🚀 Features:
-1.Detects multiple faces in a single image
+## Features
 
-2.Highlights faces with rectangular boxes
+- Detects multiple faces simultaneously in a single image
+- Draws blue bounding boxes around each detected face
+- Uses OpenCV's pretrained Haar Cascade classifier
+- Works on any static image
 
-3.Uses OpenCV’s pre-trained Haar cascade for frontal face detection
+## Requirements
 
-4.Lightweight and fast
+- Python 3.x
+- OpenCV (`opencv-python`)
 
-5.Easy to use and modify
+Install dependencies:
+```bash
+pip install opencv-python
+```
 
-📂 How It Works:
-This program relies on OpenCV, a powerful open-source computer vision library. Specifically, it uses a Haar Cascade Classifier — a machine learning-based approach where a cascade function is trained with a lot of positive and negative images to detect objects.
+## Usage
 
-Key Components:
-import cv2-
-This line imports the OpenCV library in Python. OpenCV (cv2) provides various functions for image and video processing. In this project, it's used to:
+```bash
+git clone https://github.com/AhadAhmad0/Multi-Face-Detector-Python.git
+cd Multi-Face-Detector-Python
+python MultiFace_Detector.py
+```
 
-1.Load images
+Place your image in the project folder and update the `cv2.imread()` filename in the script. Make sure `haarcascade_frontalface_default.xml` is in the same directory.
 
-2.Convert color formats
+## How It Works
 
-3.Detect faces
+The image is converted to grayscale, then passed to `detectMultiScale()` which scans for face-like patterns. Bounding boxes are drawn on the original image for each detection.
 
-4.Draw rectangles around detected areas
+## Author
 
-haarcascade_frontalface_default.xml:
-This is a pre-trained XML file included in OpenCV. It contains data for detecting frontal human faces using the Haar feature-based cascade classifier. This model is trained on thousands of positive (face) and negative (non-face) images. The classifier can efficiently scan an image and locate face-like patterns.
-
-haarcascade_frontalface_default.xml
-This is a pre-trained XML file included in OpenCV. It contains data for detecting frontal human faces using the Haar feature-based cascade classifier. This model is trained on thousands of positive (face) and negative (non-face) images. The classifier can efficiently scan an image and locate face-like patterns.
-
-I have also provided the image file and .xml file.
+**Ahad Ahmad** — [@AhadAhmad0](https://github.com/AhadAhmad0)
